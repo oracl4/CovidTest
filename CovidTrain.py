@@ -16,7 +16,7 @@ input_size = (224, 224)
 channel = (3, )
 input_shape = input_size + channel
 batch_size = 16
-epoch = 1
+epoch = 15
 
 splitfolders.ratio("Dataset_Confirm",
                    output="Dataset_Final",
@@ -141,7 +141,7 @@ print("Training Time : ", time_elapsed)
 # print('Testing Accuracy  : {:.4f} \nTesting Loss: {:.4f}'.format(tests_acc, tests_loss),'\n')
 
 # Save the Model Training Result
-model.save("model.h5")
+model.save("Resnet_Covid19Model.h5")
 
 # """**Model Training Result**"""
 
